@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fruit Catcher</title>
+    <!-- Lib -->
+    <script src="./libraries/p5.js"></script>
+    <script src="./libraries/p5.dom.min.js"></script>
+    <script src="./libraries/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+      const firebaseConfig = {
+  apiKey: "AIzaSyBn13mwr2HTy45y7AslBIwUj6WrDSI1k9w",
+  authDomain: "multiplayer-car-racing-g-5449e.firebaseapp.com",
+  databaseURL: "https://multiplayer-car-racing-g-5449e-default-rtdb.firebaseio.com",
+  projectId: "multiplayer-car-racing-g-5449e",
+  storageBucket: "multiplayer-car-racing-g-5449e.appspot.com",
+  messagingSenderId: "528536380785",
+  appId: "1:528536380785:web:6885389871aed23db302d0"
+};
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <script src="./js/game.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./sketch.js"></script>
+  </body>
+</html>
